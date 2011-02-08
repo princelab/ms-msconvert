@@ -1,6 +1,6 @@
 = ms-msconvert
 
-Description goes here.
+
 
 == Contributing to ms-msconvert
  
