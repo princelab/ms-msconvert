@@ -1,19 +1,25 @@
 = ms-msconvert
 
+ms-msconvert provides convenient executables for working with msconvert.  It
+seeks to hide the messyness involved in having to use closed/propriety
+libraries to convert Thermo's .raw file format.
 
+== Examples
 
-== Contributing to ms-msconvert
- 
-* Check out the latest master to make sure the feature hasn't been implemented or the bug hasn't been fixed yet
-* Check out the issue tracker to make sure someone already hasn't requested it and/or contributed it
-* Fork the project
-* Start a feature/bugfix branch
-* Commit and push until you are happy with your contribution
-* Make sure to add tests for it. This is important so I don't break it in a future version unintentionally.
-* Please try not to mess with the Rakefile, version, or history. If you want to have your own version, or is otherwise necessary, that is fine, but please isolate to its own commit so I can cherry-pick around it.
+=== Local usage
+
+Defaults are somewhat different than msconvert
+
+* each output file is depositied in the directory where the source file resides.
+* the -z (compress peaks) flag is supplied by default, resulting in much smaller files
+
+    msconvert.rb file1.raw /path/to/file2.raw 
+    # outputs file1.mzML /path/to/file2.mzML 
+
+    msconvert.rb --mzXML file1.raw /path/to/file2.raw 
+    # outputs file1.mzXML /path/to/file2.mzXML
 
 == Copyright
 
-Copyright (c) 2011 John Prince. See LICENSE.txt for
-further details.
+see LICENSE
 
