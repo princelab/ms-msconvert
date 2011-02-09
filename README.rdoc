@@ -2,7 +2,7 @@
 
 ms-msconvert provides convenient executables for working with msconvert.  It
 seeks to hide the messyness involved in having to use closed/propriety
-libraries to convert Thermo's .raw file format.
+libraries to convert Thermo's .raw file format (and other MS vendors).
 
 == Examples
 
